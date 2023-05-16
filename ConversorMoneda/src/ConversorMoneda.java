@@ -18,6 +18,8 @@ public class ConversorMoneda {
                 opcionesMonedas,
                 opcionesMonedas[0]);
 
+
+
         if (seleccion != null) {
             if (seleccion.equals(opcionesMonedas[0])) {
                 OperacionesMoneda.convertirPesosADolares();
@@ -39,6 +41,13 @@ public class ConversorMoneda {
                 OperacionesMoneda.convertirYenJaponesAPesos();
             } else if (seleccion.equals(opcionesMonedas[9])) {
                 OperacionesMoneda.convertirWonSulCoreanoAPesos();
+            }
+            int confirm = JOptionPane.showConfirmDialog(null, "¿Desea continuar?", "Confirmar cierre", JOptionPane.YES_NO_OPTION);
+            if (confirm == JOptionPane.YES_OPTION) {
+            ConversorMoneda.conversorMoneda();
+            } else {
+                JOptionPane.showMessageDialog(null, "Programa terminado", "Confirmación de cierre", JOptionPane.INFORMATION_MESSAGE);
+                System.exit(0); // Cierra el programa
             }
         }
     }

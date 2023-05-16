@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class Interface {
+public class AppConversorAlura {
 
     public static void main(String[] args) {
 

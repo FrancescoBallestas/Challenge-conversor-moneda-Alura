@@ -29,7 +29,15 @@ public class ConversorTemp {
             } else if (seleccion2.equals(opcionesTemperatura[5])) {
                 OperacionesTemp.convertirKelvinAFahrenheit();
             }
+            int confirm = JOptionPane.showConfirmDialog(null, "¿Desea continuar?", "Confirmar cierre", JOptionPane.YES_NO_OPTION);
+            if (confirm == JOptionPane.YES_OPTION) {
+                ConversorTemp.conversorTemp();
+            } else {
+                JOptionPane.showMessageDialog(null, "Programa terminado", "Confirmación de cierre", JOptionPane.INFORMATION_MESSAGE);
+                System.exit(0); // Cierra el programa
+            }
         }
+
 
     }
 
