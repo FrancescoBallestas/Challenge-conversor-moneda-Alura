@@ -26,7 +26,7 @@ public class OperacionesMoneda {
             double euro = pesosCop * factorEuro;
             Locale locale = new Locale("es", "ES");
             NumberFormat formatoMoneda = NumberFormat.getCurrencyInstance(locale);
-            JOptionPane.showMessageDialog(null, "Euros: "
+            JOptionPane.showMessageDialog(null, "Tienes: "
                             + formatoMoneda.format(euro), "Resultado",
                     JOptionPane.INFORMATION_MESSAGE);
         }catch (NumberFormatException e) {
@@ -42,7 +42,7 @@ public class OperacionesMoneda {
         double libras = pesosCop * factorLibra;
         Locale locale = new Locale("en-GB", "GB");
         NumberFormat formatoMoneda = NumberFormat.getCurrencyInstance(locale);
-    JOptionPane.showMessageDialog(null, "Libras Esterlinas: "
+    JOptionPane.showMessageDialog(null, "Tienes: "
             + formatoMoneda.format(libras), "Resultado",
             JOptionPane.INFORMATION_MESSAGE);
         }catch (NumberFormatException e) {
@@ -58,7 +58,7 @@ public class OperacionesMoneda {
         double yen = pesosCop * factorYen;
         Locale locale = new Locale("ja", "JP");
         NumberFormat formatoMoneda = NumberFormat.getCurrencyInstance(locale);
-        JOptionPane.showMessageDialog(null, "Libras Esterlinas: "
+        JOptionPane.showMessageDialog(null, "Tienes: "
                         + formatoMoneda.format(yen), "Resultado",
                 JOptionPane.INFORMATION_MESSAGE);
         }catch (NumberFormatException e) {
@@ -74,7 +74,7 @@ public class OperacionesMoneda {
         double won = pesosCop * factorWon;
         Locale locale = new Locale("ko", "KR");
         NumberFormat formatoMoneda = NumberFormat.getCurrencyInstance(locale);
-        JOptionPane.showMessageDialog(null, "Libras Esterlinas: "
+        JOptionPane.showMessageDialog(null, "Tienes: "
                         + formatoMoneda.format(won), "Resultado",
                 JOptionPane.INFORMATION_MESSAGE);
         }catch (NumberFormatException e) {
@@ -91,7 +91,7 @@ public class OperacionesMoneda {
         double pesosCop = dolares * factorCop;
         Locale locale = new Locale("es", "CO");
         NumberFormat formatoMoneda = NumberFormat.getCurrencyInstance(locale);
-        JOptionPane.showMessageDialog(null, "Libras Esterlinas: "
+        JOptionPane.showMessageDialog(null, "Tienes: "
                         + formatoMoneda.format(pesosCop), "Resultado",
                 JOptionPane.INFORMATION_MESSAGE);
         }catch (NumberFormatException e) {
@@ -107,7 +107,7 @@ public class OperacionesMoneda {
         double pesosCop = euros * factorCop;
         Locale locale = new Locale("es", "CO");
         NumberFormat formatoMoneda = NumberFormat.getCurrencyInstance(locale);
-        JOptionPane.showMessageDialog(null, "Libras Esterlinas: "
+        JOptionPane.showMessageDialog(null, "Tienes: "
                         + formatoMoneda.format(pesosCop), "Resultado",
                 JOptionPane.INFORMATION_MESSAGE);
         }catch (NumberFormatException e) {
@@ -123,7 +123,7 @@ public class OperacionesMoneda {
         double pesosCop = libras * factorCop;
         Locale locale = new Locale("es", "CO");
         NumberFormat formatoMoneda = NumberFormat.getCurrencyInstance(locale);
-        JOptionPane.showMessageDialog(null, "Libras Esterlinas: "
+        JOptionPane.showMessageDialog(null, "Tienes: "
                         + formatoMoneda.format(pesosCop), "Resultado",
                 JOptionPane.INFORMATION_MESSAGE);
         }catch (NumberFormatException e) {
@@ -139,7 +139,7 @@ public class OperacionesMoneda {
         double pesosCop = yen * factorCop;
         Locale locale = new Locale("es", "CO");
         NumberFormat formatoMoneda = NumberFormat.getCurrencyInstance(locale);
-        JOptionPane.showMessageDialog(null, "Libras Esterlinas: "
+        JOptionPane.showMessageDialog(null, "Tienes: "
                         + formatoMoneda.format(pesosCop), "Resultado",
                 JOptionPane.INFORMATION_MESSAGE);
         }catch (NumberFormatException e) {
@@ -154,7 +154,7 @@ public class OperacionesMoneda {
         double factorCop = 3.3771618;
         double pesosCop = won * factorCop;Locale locale = new Locale("es", "CO");
         NumberFormat formatoMoneda = NumberFormat.getCurrencyInstance(locale);
-        JOptionPane.showMessageDialog(null, "Libras Esterlinas: "
+        JOptionPane.showMessageDialog(null, "Tienes: "
                         + formatoMoneda.format(pesosCop), "Resultado",
                 JOptionPane.INFORMATION_MESSAGE);
         }catch (NumberFormatException e) {
